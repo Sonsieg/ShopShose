@@ -1,0 +1,16 @@
+export default {
+  icongoBack: require('../assets/images/icongoBack.png'),
+  eye: require('../assets/images/eye.png'),
+  noeye: require('../assets/images/noeye.png'),
+  logo: require('../assets/images/logo.png'),
+  iconEmail: require('../assets/images/iconEmail.png'),
+  iconPass: require('../assets/images/iconPass.png'),
+  iconPhone: require('../assets/images/iconPhone.png'),
+  iconPersion: require('../assets/images/iconPersion.png'),
+  background: require('../assets/images/background.png'),
+  coco: require('../assets/images/coco.jpg'),
+  yeriOne: require('../assets/images/yeri_remind.png'),
+  yeriTwo: require('../assets/images/yeri_two.png'),
+  yeriThree: require('../assets/images/yeri_three.png'),
+  cat: require('../assets/images/cat.png'),
+};

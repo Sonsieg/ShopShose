@@ -1,0 +1,60 @@
+{
+  "name": "shopshose",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "cd android && ./gradlew clean && cd .. && react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint .",
+    "clean": "rm -rf node_modules/ && yarn install && cd ios && rm -rf Pods && rm -rf Podfile.lock && pod install",
+    "postinstall": "patch-package"
+  },
+  "dependencies": {
+    "@react-native-community/async-storage": "^1.12.1",
+    "@react-native-community/netinfo": "^7.1.7",
+    "@react-navigation/compat": "^5.3.20",
+    "@react-navigation/native": "^6.0.6",
+    "@react-navigation/native-stack": "^6.2.5",
+    "@react-navigation/stack": "^6.0.11",
+    "axios": "^0.24.0",
+    "idx": "^2.5.6",
+    "moment": "^2.29.1",
+    "patch-package": "^6.4.7",
+    "react": "17.0.2",
+    "react-native": "0.66.4",
+    "react-native-animated-spinkit": "^1.5.2",
+    "react-native-device-info": "^8.4.8",
+    "react-native-gesture-handler": "^2.1.0",
+    "react-native-keyboard-aware-scroll-view": "^0.9.5",
+    "react-native-permissions": "^3.2.0",
+    "react-native-reanimated": "^2.3.1",
+    "react-native-safe-area-context": "^3.3.2",
+    "react-native-screens": "^3.10.1",
+    "react-native-svg": "^12.1.1",
+    "react-native-swiper": "^1.6.0",
+    "react-native-vector-icons": "^9.0.0",
+    "react-redux": "^7.2.6",
+    "reactotron-react-native": "^5.0.1",
+    "reactotron-redux": "^3.1.3",
+    "reactotron-redux-saga": "^4.2.3",
+    "redux-logger": "^3.0.6",
+    "redux-persist": "^6.0.0",
+    "redux-saga": "^1.1.3",
+    "redux-thunk": "^2.4.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/runtime": "^7.12.5",
+    "@react-native-community/eslint-config": "^2.0.0",
+    "babel-jest": "^26.6.3",
+    "eslint": "7.14.0",
+    "jest": "^26.6.3",
+    "metro-react-native-babel-preset": "^0.66.2",
+    "react-test-renderer": "17.0.2"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
