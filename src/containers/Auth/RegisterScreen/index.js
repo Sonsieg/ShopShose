@@ -3,33 +3,28 @@ import {StyleSheet, Text, View} from 'react-native';
 import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
 import {InputNormal, Logo, OR, TouchButton} from '../../../components';
 import {Colors, Dimens} from '../../../config';
-import {scale} from '../../../libs/scaling';
 import NavigationHelper from '../../../helpers/NavigationHelper';
+import {scale} from '../../../libs/scaling';
 
-const LoginScreen = () => {
+const RegisterScreen = () => {
   return (
     <View style={styles.container}>
       <KeyboardAwareScrollView
         style={styles.viewScrollView}
         showsVerticalScrollIndicator={false}>
-        <Logo textTop="Welcome to Lafyuu" textBottom="Sign in to continue" />
-        <InputNormal email placeholder="Your Email" />
+        <Logo textTop="Let's Get Started" textBottom="Create an new account" />
+        <InputNormal person placeholder="Your Email" />
+        <InputNormal email placeholder="Password" />
         <InputNormal password placeholder="Password" />
-        <TouchButton
-          title="Sign In"
-          onPress={() => NavigationHelper.navigate('TabBottom')}
-        />
-        <OR />
-        <TouchButton icon google title="Login with Google" />
-        <TouchButton icon facebook title="Login with facebook" />
+        <InputNormal password placeholder="Password" />
+        <TouchButton title="Sign Up" />
         <View style={styles.viewText}>
-          <Text style={styles.textForgot}>Forgot Password?</Text>
           <Text>
-            <Text style={styles.textGray}>Don’t have a account?</Text>
+            <Text style={styles.textGray}>have a account?</Text>
             <Text
-              onPress={() => NavigationHelper.navigate('RegisterScreen')}
+              onPress={() => NavigationHelper.navigate('LoginScreen')}
               style={styles.textBlue}>
-              {' Register'}
+              {' Sign In'}
             </Text>
           </Text>
         </View>
@@ -63,4 +58,4 @@ const styles = StyleSheet.create({
     fontWeight: '500',
   },
 });
-export default LoginScreen;
+export default RegisterScreen;

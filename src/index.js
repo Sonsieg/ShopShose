@@ -1,10 +1,11 @@
 import {NavigationContainer} from '@react-navigation/native';
 import React from 'react';
+import {navigationRef} from './helpers/NavigationHelper';
 import Router from './router';
 
 const Root = () => {
   return (
-    <NavigationContainer>
+    <NavigationContainer ref={navigationRef}>
       <Router />
     </NavigationContainer>
   );

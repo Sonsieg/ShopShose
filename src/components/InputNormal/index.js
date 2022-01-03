@@ -18,6 +18,8 @@ const InputNormal = ({
   onChangeText,
   type,
   placeholder = 'enter',
+  icon,
+  person,
 }) => {
   return (
     <>
@@ -28,6 +30,14 @@ const InputNormal = ({
           error && {borderColor: Colors.red},
         ]}>
         <View style={styles.viewIcon}>
+          {icon && icon()}
+          {person && (
+            <MaterialCommunityIcons
+              name="account-outline"
+              style={[styles.icon, error && {color: Colors.red}]}
+              size={scale(20)}
+            />
+          )}
           {email && (
             <MaterialCommunityIcons
               name="email-outline"

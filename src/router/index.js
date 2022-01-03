@@ -5,6 +5,7 @@ import {Text, View} from 'react-native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import {Colors} from '../config';
+import {RegisterScreen} from '../containers';
 
 Ionicons.loadFont();
 
@@ -47,7 +48,7 @@ function SettingsScreen4() {
     </View>
   );
 }
-const Hello = () => {
+const TabBottom = () => {
   return (
     <Tab.Navigator initialRouteName="Home" screenOptions={{headerShown: false}}>
       <Tab.Screen
@@ -138,8 +139,9 @@ const Router = () => {
     <Stack.Navigator
       initialRouteName="LoginScreen"
       screenOptions={{headerShown: false}}>
-      <Stack.Screen name="Hello" component={Hello} />
+      <Stack.Screen name="TabBottom" component={TabBottom} />
       <Stack.Screen name="LoginScreen" component={LoginScreen} />
+      <Stack.Screen name="RegisterScreen" component={RegisterScreen} />
     </Stack.Navigator>
   );
 };
