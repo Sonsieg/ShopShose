@@ -5,7 +5,7 @@ import {Text, View} from 'react-native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import {Colors} from '../config';
-import {RegisterScreen} from '../containers';
+import {AccountScreen, ProfileScreen, RegisterScreen} from '../containers';
 
 Ionicons.loadFont();
 
@@ -97,6 +97,7 @@ const TabBottom = () => {
           ),
           tabBarActiveTintColor: Colors.royalblue,
           tabBarInactiveTintColor: Colors.gray,
+          tabBarBadge: 3,
         }}
       />
       <Tab.Screen
@@ -116,8 +117,8 @@ const TabBottom = () => {
         }}
       />
       <Tab.Screen
-        name="SettingsScreen4"
-        component={SettingsScreen4}
+        name="AccountScreen"
+        component={AccountScreen}
         options={{
           tabBarLabel: 'Account',
           tabBarIcon: ({focused, color, size}) => (
@@ -142,6 +143,7 @@ const Router = () => {
       <Stack.Screen name="TabBottom" component={TabBottom} />
       <Stack.Screen name="LoginScreen" component={LoginScreen} />
       <Stack.Screen name="RegisterScreen" component={RegisterScreen} />
+      <Stack.Screen name="ProfileScreen" component={ProfileScreen} />
     </Stack.Navigator>
   );
 };

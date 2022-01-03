@@ -6,8 +6,19 @@ import HeaderShop from './HeaderShop';
 import TouchButton from './TouchButton';
 import Logo from './Logo';
 import OR from './OR';
+import TouchAccount from './TouchAccount';
 
-export {Touchable, Text, Popup, InputNormal, HeaderShop, TouchButton, Logo, OR};
+export {
+  Touchable,
+  Text,
+  Popup,
+  InputNormal,
+  HeaderShop,
+  TouchButton,
+  Logo,
+  OR,
+  TouchAccount,
+};
 
 export default {
   Touchable,
@@ -18,4 +29,5 @@ export default {
   TouchButton,
   Logo,
   OR,
+  TouchAccount,
 };

@@ -1,6 +1,6 @@
 import React from 'react';
 import {TouchableOpacity} from 'react-native';
-import {Flow, Wander} from 'react-native-animated-spinkit';
+import {Wander} from 'react-native-animated-spinkit';
 import NetInfo from '@react-native-community/netinfo';
 import {Colors} from '../../config';
 import {showAlert} from '../../helpers/FunctionsHelper';
