@@ -9,13 +9,8 @@ const PATH =
 const Logo = ({textTop, textBottom}) => {
   return (
     <View style={styles.viewContainer}>
-      <Svg width={scale(72)} height={scale(72)} fill="none">
-        <Rect
-          width={scale(72)}
-          height={scale(72)}
-          rx={scale(16)}
-          fill="#40BFFF"
-        />
+      <Svg width={72} height={72} fill="none">
+        <Rect width={72} height={72} rx={16} fill="#40BFFF" />
         <Path fillRule="evenodd" clipRule="evenodd" fill="#fff" d={PATH} />
       </Svg>
       <Text style={styles.textTop}>{textTop}</Text>
