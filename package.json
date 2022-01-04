@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android": "cd android && ./gradlew clean && cd .. && react-native run-android",
+    "android": "rm -rf node_modules && yarn install && cd android && ./gradlew clean && cd .. && react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
@@ -30,7 +30,6 @@
     "react-native-gesture-handler": "^2.1.0",
     "react-native-keyboard-aware-scroll-view": "^0.9.5",
     "react-native-permissions": "^3.2.0",
-    "react-native-reanimated": "^2.3.1",
     "react-native-safe-area-context": "^3.3.2",
     "react-native-screens": "^3.10.1",
     "react-native-svg": "^12.1.1",
