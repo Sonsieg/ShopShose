@@ -5,7 +5,13 @@ import {Text, View} from 'react-native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import {Colors} from '../config';
-import {AccountScreen, ProfileScreen, RegisterScreen} from '../containers';
+import {
+  AccountScreen,
+  GenderScreen,
+  NameScreen,
+  ProfileScreen,
+  RegisterScreen,
+} from '../containers';
 
 Ionicons.loadFont();
 
@@ -144,6 +150,8 @@ const Router = () => {
       <Stack.Screen name="LoginScreen" component={LoginScreen} />
       <Stack.Screen name="RegisterScreen" component={RegisterScreen} />
       <Stack.Screen name="ProfileScreen" component={ProfileScreen} />
+      <Stack.Screen name="NameScreen" component={NameScreen} />
+      <Stack.Screen name="GenderScreen" component={GenderScreen} />
     </Stack.Navigator>
   );
 };

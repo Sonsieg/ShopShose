@@ -13,7 +13,9 @@ const ProfileScreen = () => {
         onPressBack={() => NavigationHelper.goBack()}
       />
       <View style={styles.viewContent}>
-        <Touchable style={styles.viewAvatar}>
+        <Touchable
+          style={styles.viewAvatar}
+          onPress={() => NavigationHelper.navigate('NameScreen')}>
           <Image
             source={Images.cat}
             style={styles.imageAvatar}
@@ -24,7 +26,12 @@ const ProfileScreen = () => {
             <Text style={styles.textMail}>@gmail.com</Text>
           </View>
         </Touchable>
-        <TouchAccount title="Gender" gender description="xin chòa" />
+        <TouchAccount
+          title="Gender"
+          gender
+          description="xin chòa"
+          onPress={() => NavigationHelper.navigate('GenderScreen')}
+        />
         <TouchAccount title="Birthday" birthday description="xin chòa" />
         <TouchAccount title="Email" email description="xin chòa" />
         <TouchAccount title="Phone" phone description="xin chòa" />

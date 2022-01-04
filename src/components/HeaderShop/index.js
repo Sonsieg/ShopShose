@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
     borderBottomWidth: StyleSheet.hairlineWidth,
-    borderColor: Colors.royalblue,
+    borderColor: Colors.gray,
   },
   viewTitle: {
     fontWeight: '500',

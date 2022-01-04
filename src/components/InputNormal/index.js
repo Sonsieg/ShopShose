@@ -20,6 +20,7 @@ const InputNormal = ({
   placeholder = 'enter',
   icon,
   person,
+  nullIcon,
 }) => {
   return (
     <>
@@ -29,37 +30,42 @@ const InputNormal = ({
           disable && {opacity: 0.5},
           error && {borderColor: Colors.red},
         ]}>
-        <View style={styles.viewIcon}>
-          {icon && icon()}
-          {person && (
-            <MaterialCommunityIcons
-              name="account-outline"
-              style={[styles.icon, error && {color: Colors.red}]}
-              size={scale(20)}
-            />
-          )}
-          {email && (
-            <MaterialCommunityIcons
-              name="email-outline"
-              style={[styles.icon, error && {color: Colors.red}]}
-              size={scale(20)}
-            />
-          )}
-          {password && (
-            <MaterialCommunityIcons
-              name="lock-outline"
-              style={[styles.icon, error && {color: Colors.red}]}
-              size={scale(20)}
-            />
-          )}
-          {search && (
-            <Ionicons
-              name="search"
-              style={[styles.icon, error && {color: Colors.red}]}
-              size={scale(20)}
-            />
-          )}
-        </View>
+        {nullIcon ? (
+          <View />
+        ) : (
+          <View style={styles.viewIcon}>
+            {icon && icon()}
+            {person && (
+              <MaterialCommunityIcons
+                name="account-outline"
+                style={[styles.icon, error && {color: Colors.red}]}
+                size={scale(20)}
+              />
+            )}
+            {email && (
+              <MaterialCommunityIcons
+                name="email-outline"
+                style={[styles.icon, error && {color: Colors.red}]}
+                size={scale(20)}
+              />
+            )}
+            {password && (
+              <MaterialCommunityIcons
+                name="lock-outline"
+                style={[styles.icon, error && {color: Colors.red}]}
+                size={scale(20)}
+              />
+            )}
+            {search && (
+              <Ionicons
+                name="search"
+                style={[styles.icon, error && {color: Colors.red}]}
+                size={scale(20)}
+              />
+            )}
+          </View>
+        )}
+
         <TextInput
           style={styles.viewTextInput}
           placeholder={placeholder}
