@@ -13,4 +13,6 @@ export default {
   yeriTwo: require('../assets/images/yeri_two.png'),
   yeriThree: require('../assets/images/yeri_three.png'),
   cat: require('../assets/images/cat.png'),
+  shoseBgOne: require('../assets/images/shoseBgOne.png'),
+  shoseBgTwo: require('../assets/images/shoseBgTwo.png'),
 };

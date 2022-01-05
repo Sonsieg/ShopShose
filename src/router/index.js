@@ -9,6 +9,7 @@ import {
   AccountScreen,
   GenderScreen,
   NameScreen,
+  OfferScreen,
   ProfileScreen,
   RegisterScreen,
 } from '../containers';
@@ -40,20 +41,7 @@ function SettingsScreen2() {
     </View>
   );
 }
-function SettingsScreen3() {
-  return (
-    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-      <Text>Settings!</Text>
-    </View>
-  );
-}
-function SettingsScreen4() {
-  return (
-    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-      <Text>Settings!</Text>
-    </View>
-  );
-}
+
 const TabBottom = () => {
   return (
     <Tab.Navigator initialRouteName="Home" screenOptions={{headerShown: false}}>
@@ -107,8 +95,8 @@ const TabBottom = () => {
         }}
       />
       <Tab.Screen
-        name="SettingsScreen3"
-        component={SettingsScreen3}
+        name="OfferScreen"
+        component={OfferScreen}
         options={{
           tabBarLabel: 'Offer',
           tabBarIcon: ({focused, color, size}) => (

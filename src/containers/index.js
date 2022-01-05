@@ -4,6 +4,7 @@ import AccountScreen from './AccountScreen';
 import ProfileScreen from './AccountScreen/ProfileScreen';
 import NameScreen from './AccountScreen/NameScreen';
 import GenderScreen from './AccountScreen/GenderScreen';
+import OfferScreen from './OfferScreen';
 
 export {
   LoginScreen,
@@ -12,6 +13,7 @@ export {
   ProfileScreen,
   NameScreen,
   GenderScreen,
+  OfferScreen,
 };
 
 export default {
@@ -21,4 +23,5 @@ export default {
   ProfileScreen,
   NameScreen,
   GenderScreen,
+  OfferScreen,
 };
