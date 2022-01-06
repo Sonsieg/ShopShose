@@ -27,9 +27,10 @@ const TouchButton = ({
   onPress,
   title = 'button',
   onPressLogin,
+  propStyle,
 }) => {
   return (
-    <Touchable style={styles.containerNormal} onPress={onPress}>
+    <Touchable style={[styles.containerNormal, {propStyle}]} onPress={onPress}>
       {icon ? (
         <Touchable style={styles.viewIcon} onPress={onPressLogin}>
           {google ? (

@@ -7,6 +7,7 @@ import TouchButton from './TouchButton';
 import Logo from './Logo';
 import OR from './OR';
 import TouchAccount from './TouchAccount';
+import ItemCart from './ItemCart';
 
 export {
   Touchable,
@@ -18,6 +19,7 @@ export {
   Logo,
   OR,
   TouchAccount,
+  ItemCart,
 };
 
 export default {
@@ -30,4 +32,5 @@ export default {
   Logo,
   OR,
   TouchAccount,
+  ItemCart,
 };

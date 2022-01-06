@@ -15,4 +15,6 @@ export default {
   cat: require('../assets/images/cat.png'),
   shoseBgOne: require('../assets/images/shoseBgOne.png'),
   shoseBgTwo: require('../assets/images/shoseBgTwo.png'),
+  shoseOne: require('../assets/images/shoseOne.png'),
+  shoseTwo: require('../assets/images/shoseTwo.png'),
 };

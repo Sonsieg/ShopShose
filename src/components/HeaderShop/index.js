@@ -3,7 +3,6 @@ import {Animated, StyleSheet, Text, View} from 'react-native';
 import {Colors, Dimens} from '../../config';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import {scale} from '../../libs/scaling';
-import {InputNormal} from '..';
 MaterialIcons.loadFont();
 const HeaderShop = ({
   title,

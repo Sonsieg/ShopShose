@@ -21,6 +21,7 @@ const InputNormal = ({
   icon,
   person,
   nullIcon,
+  propStyle,
 }) => {
   return (
     <>
@@ -29,6 +30,7 @@ const InputNormal = ({
           styles.container,
           disable && {opacity: 0.5},
           error && {borderColor: Colors.red},
+          propStyle,
         ]}>
         {nullIcon ? (
           <View />

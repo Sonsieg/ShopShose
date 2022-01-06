@@ -6,12 +6,14 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import {Colors} from '../config';
 import {
+  CartScreen,
   AccountScreen,
   GenderScreen,
   NameScreen,
   OfferScreen,
   ProfileScreen,
   RegisterScreen,
+  ShipToScreen,
 } from '../containers';
 
 Ionicons.loadFont();
@@ -78,8 +80,8 @@ const TabBottom = () => {
         }}
       />
       <Tab.Screen
-        name="SettingsScreen2"
-        component={SettingsScreen2}
+        name="CartScreen"
+        component={CartScreen}
         options={{
           tabBarLabel: 'Cart',
           tabBarIcon: ({focused, color, size}) => (
@@ -140,6 +142,7 @@ const Router = () => {
       <Stack.Screen name="ProfileScreen" component={ProfileScreen} />
       <Stack.Screen name="NameScreen" component={NameScreen} />
       <Stack.Screen name="GenderScreen" component={GenderScreen} />
+      <Stack.Screen name="ShipToScreen" component={ShipToScreen} />
     </Stack.Navigator>
   );
 };
